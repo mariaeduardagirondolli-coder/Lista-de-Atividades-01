@@ -1,10 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int A = 10;
-int B = 20;
-int aux;
-Console.WriteLine($"O valor de A = {A} e o de B = {B}");
-aux = A;
-A = B;
-B = aux;
-Console.WriteLine($"O valor de A = {A} e o de B = {B}");
+int valor;
+Console.WriteLine("Digite um valor: ");
+valor = int.Parse(Console.ReadLine());
+Console.WriteLine($"O número antecessor é: {valor - 1}");
 
