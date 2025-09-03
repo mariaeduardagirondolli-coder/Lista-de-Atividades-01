@@ -1,11 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int num1;
-int num2;
-
-Console.WriteLine("Digite um número: ")
-num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite outro número: ")
-num2 = int.Parse(Console.ReadLine());
-int soma = num1 + num2;
-Console.WriteLine($"A soma entre {num1} e {num2} é de {soma}");
-
+int A = 10;
+int B = 20;
+int aux;
+Console.WriteLine($"O valor de A = {A} e o de B = {B}");
+aux = A;
+A = B;
+B = aux;
+Console.WriteLine($"O valor de A = {A} e o de B = {B}");
