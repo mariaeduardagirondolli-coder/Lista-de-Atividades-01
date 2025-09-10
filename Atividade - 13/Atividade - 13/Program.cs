@@ -1,26 +1,27 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int anoNascimento;
-int anoAtual;
-int idade;
-Console.WriteLine("Escreva o ano atual: ");
-anoAtual = int.Parse(Console.ReadLine());
+Console.Write("Digite o primeiro valor: ");
+int valor1 = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Escreva o do seu nascimento: ");
-anoNascimento = int.Parse(Console.ReadLine());
+Console.Write("Digite o segundo valor: ");
+int valor2 = int.Parse(Console.ReadLine());
 
-idade = anoAtual - anoNascimento;
+Console.Write("Digite o terceiro valor: ");
+int valor3 = int.Parse(Console.ReadLine());
 
-if (idade < 16)
+int maior;
+
+// Comparações para encontrar o maior valor
+if (valor1 >= valor2 && valor1 >= valor3)
 {
-    Console.WriteLine("Você não pode votar");
+    maior = valor1;
 }
-
-else if ((idade >= 16 && idade <= 18 || idade >= 70))
+else if (valor2 >= valor1 && valor2 >= valor3)
 {
-    Console.WriteLine("Seu voto é facultativo");
+    maior = valor2;
 }
-
 else
 {
-    Console.WriteLine("Você é obrigado a votar.");
+    maior = valor3;
 }
+
+Console.WriteLine($"O maior valor é: {maior}");
